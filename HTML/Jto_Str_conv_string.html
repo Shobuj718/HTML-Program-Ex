@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+		<p>The the toString()method can output number as base 16
+		(Hexadecimal),8(octal),2(binary)</p>
+		<p id="demo"></p>
+		
+		<button onclick="myFunction()">Try it</button>
+		
+		<script>
+			function myFunction(){
+				var x = 128;
+				document.getElementById("demo").innerHTML =
+				x.toString() + "<br>" +
+				(128).toString() + "<br>" + 
+				(100 + 23).toString();
+			}
+		</script>
+	</body>
+
+</html>

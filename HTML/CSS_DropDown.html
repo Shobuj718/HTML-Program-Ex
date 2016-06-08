@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.Dropbtn{
+				background-color:green;
+				color:white;
+				padding:10px;
+				font-size:10px;
+				border:none;
+				cursor:pointer;
+			}
+			.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.dropdown-content{
+				display:none;
+				position:absolute;
+				background-color:cyan;
+				min-width:160px;
+				box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+			.dropdown-content a{
+				background-color:blue;
+				color:black;
+				padding:12px 16px;
+				text-decoration:none;
+				display:block;
+			}
+			.dropdown-content a:hover{
+				background-color:cyan;
+			}
+			.dropdown:hover .dropdown-content{
+				display:block;
+			}
+			.dropdown:hover .Dropbtn{
+				background-color:#3e8e41;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is a drop down content:</h1>
+		<div class="dropdown">
+			<button class="Dropbtn">DropDown</button>
+			<div class="dropdown-content">
+				<a href="http://google.com">Google</a>
+				<a href="http://facebook.com">Facebook</a>
+				<a href="http://yahoo.com">Yahoo</a>
+			</div>
+		</div>
+	</body>
+
+</html>

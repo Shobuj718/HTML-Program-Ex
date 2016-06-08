@@ -1,0 +1,23 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:sans-serif;
+	text-align:center;
+}
+/*center the website*/
+#center_maker{
+	width:960px;
+	margin:0px auto; /* center the body perfectly */
+	border:2px solid red;
+	
+}
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>Webacademybd &bull;; new tag for complete layout</title>
+		<link rel="stylesheet" href="desktop/style.css" type="text/css"/>
+		
+		
+		
+		Universal Coded Character Set + Transformation Format – 8-bit

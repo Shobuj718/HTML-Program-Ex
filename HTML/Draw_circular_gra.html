@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+	
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #0000ff;">
+		This browser does not support the html5 canvas tag</canvas>
+		
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			var grd = ctx.createLinearGradient(0,0,200,0);
+			grd.addColorStop(0,"green");
+			grd.addColorStop(1,"black");
+			ctx.fillStyle = grd;
+			ctx.fillRect(10,10,150,80);
+			
+		</script>
+		
+		
+		<canvas id="myCanvas" width="400" height="100" style="border:1px solid #0000ff;">
+		This browser does not support the html5 canvas tag</canvas>
+		
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			
+			var grd1 = ctx.createRadialGradient(75,50,5,90,60,100);
+			grd1.addColorStop(0,"red");
+			grd1.addColorStop(1,"white");
+			ctx.fillStyle = grd1;
+			ctx.fillRect(10,10,150,80);
+			
+		</script>
+	
+	</body>
+
+</html>

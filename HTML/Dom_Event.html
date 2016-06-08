@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseover ="mOver(this)"  onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseout = "mOut(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+function mOver(obj){
+   obj.style.backgroundColor = "green";
+obj.innerHTML ="Yes";
+
+}
+function mOut(obj){
+obj.style.backgroundColor = "yellow";
+obj.innerHTML = "Ok";
+}
+function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+    obj.style.backgroundColor="#D94A38";
+    obj.innerHTML="Thank You";
+}
+</script>
+
+</body>
+</html> 

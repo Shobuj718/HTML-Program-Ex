@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body{
+				background-color:cyan;
+			}
+			h1{
+				background-color:navy;
+				background-color:yellow;
+				border-style:dotted;
+			}
+			p{
+				background-color:green;
+				background-color:orange;
+				border-style:solid;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<h1>Javascript can validate input</h1>
+		
+		<p>Please enter a number between 1 and 10</p>
+		
+		<input id="numb">
+		<button type="button" onclick="myfunction()">Submit</button>
+		<p id="demo"></p>
+		
+		<script>
+			function myfunction(){
+				var x = document.getElementById("numb").value;
+				if(isNaN(x) || x<1 || x>10){
+					text = "Input not valid";
+				}
+				else{
+					text = "Input valid";
+				}
+				document.getElementById("demo").innerHTML = text;
+			}
+		</script>
+		
+	</body>
+
+</html>

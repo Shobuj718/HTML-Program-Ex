@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+		<p>The toExponential() method returns a string, with the 
+		   number rounded and written using exponential notation.</p>
+		<p>An optional parameter defines the number of digits behind the decimal point</p>
+		<p id="demo"></p>
+		
+		<button onclick="myFunction()">Try it</button>
+		
+		<script>
+			function myFunction(){
+				var myNumber = 9.656;
+				document.getElementById("demo").innerHTML = 
+				myNumber.toExponential() + "<br>" + 
+				myNumber.toExponential(2) + "<br>" + 
+				myNumber.toExponential(4) + "<br>" +
+				myNumber.toExponential(6);
+			}
+		</script>
+	</body>
+
+</html>

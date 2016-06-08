@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+		<button onclick="getElementById('demo').innerHTML=Date()">What time is it?</button>
+		<p id="demo"></p>
+		<br>
+		<button onclick="this.innerHTML=Date()">The time is ?</button>
+		<br>
+		<button onclick="displaydate()">Time is?</button>
+		<script>
+		function displaydate(){
+			document.getElementById("demo").innerHTML=Date();
+		}
+		</script>
+	</body>
+
+</html>
